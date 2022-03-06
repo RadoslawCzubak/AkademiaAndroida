@@ -1,0 +1,80 @@
+ext {
+    def appCompatVer = "1.4.1"
+    def coreKtxVer = "1.7.0"
+    coreDependencies = [
+            appCompat: "androidx.appcompat:appcompat:${appCompatVer}",
+            coreKtx  : "androidx.core:core-ktx:${coreKtxVer}"
+    ]
+
+    def constraintLayoutVer = "2.1.3"
+    def materialVer = "1.5.0"
+    def recyclerViewVer = "1.2.1"
+    def glideVer = "4.12.0"
+    uiDependencies = [
+            constraintLayout: "androidx.constraintlayout:constraintlayout:${constraintLayoutVer}",
+            material        : "com.google.android.material:material:${materialVer}",
+            recyclerView    : "androidx.recyclerview:recyclerview:${recyclerViewVer}",
+            glide           : "com.github.bumptech.glide:glide:${glideVer}"
+    ]
+
+    def navigationVer = "2.4.0"
+    navigationDependencies = [
+            navigationFragmentKtx: "androidx.navigation:navigation-fragment-ktx:${navigationVer}",
+            navigationUi         : "androidx.navigation:navigation-ui-ktx:${navigationVer}"
+    ]
+
+    def koinVer = "2.2.3"
+    diDependencies = [
+            koinAndroid         : "io.insert-koin:koin-android:${koinVer}",
+            koinAndroidScope    : "io.insert-koin:koin-android-scope:${koinVer}",
+            koinAndroidViewModel: "io.insert-koin:koin-android-viewmodel:${koinVer}"
+    ]
+
+    def coroutinesVer = "1.6.0"
+    coroutinesDependencies = [
+            coroutinesCore   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVer}",
+            coroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutinesVer}",
+    ]
+
+    def lifecycleVer = "2.4.0"
+    def liveEventVer = "1.3.0"
+    lifecycleDependencies = [
+            lifecycleViewModel : "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleVer}",
+            lifecycleLivedata  : "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleVer}",
+            lifecycleRuntimeKtx: "androidx.lifecycle:lifecycle-runtime-ktx:${lifecycleVer}",
+            lifecycleCommon    : "androidx.lifecycle:lifecycle-common-java8:${lifecycleVer}",
+            liveEvent          : "com.github.hadilq:live-event:${liveEventVer}"
+    ]
+
+    def retrofitVer = "2.9.0"
+    def okHttpVer = "5.0.0-alpha.2"
+    def loggingInterceptorVer = "5.0.0-alpha.2"
+    networkDependencies = [
+            retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVer}",
+            gson                    : "com.squareup.retrofit2:converter-gson:${retrofitVer}",
+            okHttp                  : "com.squareup.okhttp3:okhttp:${okHttpVer}",
+            okHttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${loggingInterceptorVer}"
+    ]
+
+    def roomVer = "2.4.1"
+    databaseDependencies = [
+            roomRuntime : "androidx.room:room-runtime:${roomVer}",
+            roomCompiler: "androidx.room:room-compiler:${roomVer}"
+    ]
+
+
+    def jupiterVer = "5.8.2"
+    def mockkVer = "1.12.2"
+    def kluentVer = "1.68"
+    testImplementationDependencies = [
+            junitJupiterApi   : "org.junit.jupiter:junit-jupiter-api:${jupiterVer}",
+            junitJupiterParams: "org.junit.jupiter:junit-jupiter-params:${jupiterVer}",
+            mockk             : "io.mockk:mockk:${mockkVer}",
+            kluent            : "org.amshove.kluent:kluent:${kluentVer}"
+    ]
+
+    testRuntimeOnlyDependencies = [
+            junitJupiterEngine: "org.junit.jupiter:junit-jupiter-engine:${jupiterVer}",
+    ]
+
+}
