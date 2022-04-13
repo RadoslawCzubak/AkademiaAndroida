@@ -5,7 +5,7 @@ import io.mockk.mockk
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import org.junit.jupiter.api.Test
-import pl.rczubak.kursakademiaandroida.features.locations.LocationRepository
+import pl.rczubak.kursakademiaandroida.features.locations.domain.usecase.GetLocationsUseCase
 
 internal class GetLocationsUseCaseTest {
 

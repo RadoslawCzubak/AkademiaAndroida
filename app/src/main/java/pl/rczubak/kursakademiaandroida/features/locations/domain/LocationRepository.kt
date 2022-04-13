@@ -1,4 +1,4 @@
-package pl.rczubak.kursakademiaandroida.features.locations
+package pl.rczubak.kursakademiaandroida.features.locations.domain
 
 import pl.rczubak.kursakademiaandroida.features.locations.domain.model.Location
 

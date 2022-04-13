@@ -1,7 +1,7 @@
-package pl.rczubak.kursakademiaandroida.features.locations.domain
+package pl.rczubak.kursakademiaandroida.features.locations.domain.usecase
 
 import pl.rczubak.kursakademiaandroida.core.base.UseCase
-import pl.rczubak.kursakademiaandroida.features.locations.LocationRepository
+import pl.rczubak.kursakademiaandroida.features.locations.domain.LocationRepository
 import pl.rczubak.kursakademiaandroida.features.locations.domain.model.Location
 
 class GetLocationsUseCase(

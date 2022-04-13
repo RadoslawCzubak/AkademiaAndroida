@@ -1,4 +1,4 @@
-package pl.rczubak.kursakademiaandroida.features.episodes
+package pl.rczubak.kursakademiaandroida.features.episodes.domain
 
 import pl.rczubak.kursakademiaandroida.features.episodes.domain.model.Episode
 

@@ -1,7 +1,7 @@
-package pl.rczubak.kursakademiaandroida.features.characters.domain
+package pl.rczubak.kursakademiaandroida.features.characters.domain.usecase
 
 import pl.rczubak.kursakademiaandroida.core.base.UseCase
-import pl.rczubak.kursakademiaandroida.features.characters.CharacterRepository
+import pl.rczubak.kursakademiaandroida.features.characters.domain.CharacterRepository
 import pl.rczubak.kursakademiaandroida.features.characters.domain.model.Character
 
 class GetCharactersUseCase(

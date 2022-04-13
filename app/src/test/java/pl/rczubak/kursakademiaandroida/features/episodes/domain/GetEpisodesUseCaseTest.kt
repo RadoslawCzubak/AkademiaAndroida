@@ -5,7 +5,7 @@ import io.mockk.mockk
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import org.junit.jupiter.api.Test
-import pl.rczubak.kursakademiaandroida.features.episodes.EpisodeRepository
+import pl.rczubak.kursakademiaandroida.features.episodes.domain.usecase.GetEpisodesUseCase
 
 internal class GetEpisodesUseCaseTest {
 
