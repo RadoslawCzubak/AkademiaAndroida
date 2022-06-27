@@ -13,4 +13,8 @@ val databaseModule = module {
             "rick-and-morty-db"
         ).build()
     }
+
+    single {
+        get<RickAndMortyDb>().episodeDao()
+    }
 }
