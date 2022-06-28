@@ -17,4 +17,12 @@ val databaseModule = module {
     single {
         get<RickAndMortyDb>().episodeDao()
     }
+
+    single {
+        get<RickAndMortyDb>().characterDao()
+    }
+
+    single {
+        get<RickAndMortyDb>().locationDao()
+    }
 }

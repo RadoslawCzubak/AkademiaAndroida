@@ -8,5 +8,7 @@ data class CharactersLocationRemote(
     @SerializedName("name") val name: String,
     @SerializedName("url") val url: String
 ) {
+    companion object
+
     fun toCharactersLocation() = CharactersLocation(name, url)
 }
