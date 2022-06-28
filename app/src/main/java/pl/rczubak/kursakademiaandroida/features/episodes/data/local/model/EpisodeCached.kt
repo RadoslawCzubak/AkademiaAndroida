@@ -23,6 +23,8 @@ data class EpisodeCached(
         episode.url
     )
 
+    companion object
+
     fun toEpisode() = Episode(
         airDate = airDate,
         characters = characters,

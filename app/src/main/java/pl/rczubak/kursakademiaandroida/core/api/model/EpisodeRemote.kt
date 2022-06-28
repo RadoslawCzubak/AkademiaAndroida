@@ -21,4 +21,6 @@ data class EpisodeRemote(
         name = name,
         url = url
     )
+
+    companion object
 }
