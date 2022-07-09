@@ -1,4 +1,4 @@
-package pl.rczubak.kursakademiaandroida.features.data.remote.model
+package pl.rczubak.kursakademiaandroida.core.api.model
 
 
 import com.google.gson.annotations.SerializedName
@@ -10,7 +10,7 @@ data class CharacterRemote(
     @SerializedName("gender") val gender: String,
     @SerializedName("id") val id: Int,
     @SerializedName("image") val image: String,
-    @SerializedName("location") val location: CharactersLocationRemote,
+    @SerializedName("location") val location: CharacterLocationRemote,
     @SerializedName("name") val name: String,
     @SerializedName("origin") val origin: OriginRemote,
     @SerializedName("species") val species: String,
@@ -18,6 +18,8 @@ data class CharacterRemote(
     @SerializedName("type") val type: String,
     @SerializedName("url") val url: String
 ) {
+    companion object
+
     fun toCharacter() = Character(
         code,
         gender,

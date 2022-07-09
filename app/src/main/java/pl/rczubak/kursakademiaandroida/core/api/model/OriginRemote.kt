@@ -1,4 +1,4 @@
-package pl.rczubak.kursakademiaandroida.features.data.remote.model
+package pl.rczubak.kursakademiaandroida.core.api.model
 
 
 import com.google.gson.annotations.SerializedName
@@ -8,5 +8,7 @@ data class OriginRemote(
     @SerializedName("name") val name: String,
     @SerializedName("url") val url: String
 ) {
+    companion object
+
     fun toOrigin() = Origin(name, url)
 }

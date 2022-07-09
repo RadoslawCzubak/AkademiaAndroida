@@ -1,4 +1,4 @@
-package pl.rczubak.kursakademiaandroida.features.data.remote.model
+package pl.rczubak.kursakademiaandroida.core.api.model
 
 
 import com.google.gson.annotations.SerializedName
@@ -21,4 +21,6 @@ data class EpisodeRemote(
         name = name,
         url = url
     )
+
+    companion object
 }

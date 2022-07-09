@@ -3,7 +3,7 @@ package pl.rczubak.kursakademiaandroida.core.di
 import androidx.room.Room
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
-import pl.rczubak.kursakademiaandroida.features.data.RickAndMortyDb
+import pl.rczubak.kursakademiaandroida.core.db.RickAndMortyDb
 
 val databaseModule = module {
     single {
@@ -12,5 +12,17 @@ val databaseModule = module {
             RickAndMortyDb::class.java,
             "rick-and-morty-db"
         ).build()
+    }
+
+    single {
+        get<RickAndMortyDb>().episodeDao()
+    }
+
+    single {
+        get<RickAndMortyDb>().characterDao()
+    }
+
+    single {
+        get<RickAndMortyDb>().locationDao()
     }
 }
