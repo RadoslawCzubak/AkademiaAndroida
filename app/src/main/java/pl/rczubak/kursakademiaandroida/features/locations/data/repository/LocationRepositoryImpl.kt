@@ -38,7 +38,7 @@ class LocationRepositoryImpl(
         locations.map { LocationCached(it) }
             .toTypedArray()
             .let {
-                locationDao.saveLocations()
+                locationDao.saveLocations(*it)
             }
     }
 }

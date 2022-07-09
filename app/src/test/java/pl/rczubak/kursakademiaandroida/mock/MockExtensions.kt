@@ -3,7 +3,7 @@ package pl.rczubak.kursakademiaandroida.mock
 import org.jetbrains.annotations.TestOnly
 import pl.rczubak.kursakademiaandroida.core.api.model.*
 import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.CharacterCached
-import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.CharactersLocationCached
+import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.CharacterLocationCached
 import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.OriginCached
 import pl.rczubak.kursakademiaandroida.features.episodes.data.local.model.EpisodeCached
 import pl.rczubak.kursakademiaandroida.features.locations.data.local.model.LocationCached
@@ -47,7 +47,7 @@ fun EpisodeCached.Companion.mock() = EpisodeCached(
 )
 
 @TestOnly
-fun CharactersLocationRemote.Companion.mock() = CharactersLocationRemote(
+fun CharacterLocationRemote.Companion.mock() = CharacterLocationRemote(
     name = "name string",
     url = "url string"
 )
@@ -65,7 +65,7 @@ fun CharacterRemote.Companion.mock() = CharacterRemote(
     gender = "gender string",
     id = 1,
     image = "image string",
-    location = CharactersLocationRemote.mock(),
+    location = CharacterLocationRemote.mock(),
     name = "name string",
     origin = OriginRemote.mock(),
     species = "spieces",
@@ -87,7 +87,7 @@ fun OriginCached.Companion.mock() = OriginCached(
 )
 
 @TestOnly
-fun CharactersLocationCached.Companion.mock() = CharactersLocationCached(
+fun CharacterLocationCached.Companion.mock() = CharacterLocationCached(
     name = "name string",
     url = "url string"
 )
@@ -98,7 +98,7 @@ fun CharacterCached.Companion.mock() = CharacterCached(
     code = listOf("code1", "code2"),
     gender = "gender string",
     image = "image string",
-    location = CharactersLocationCached.mock(),
+    location = CharacterLocationCached.mock(),
     name = "name string",
     origin = OriginCached.mock(),
     species = "spieces",

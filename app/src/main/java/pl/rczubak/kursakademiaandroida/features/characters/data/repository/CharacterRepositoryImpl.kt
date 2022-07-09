@@ -34,6 +34,8 @@ class CharacterRepositoryImpl(
     private suspend fun saveCharacters(characters: List<Character>) {
         characters.map { CharacterCached(it) }
             .toTypedArray()
-        characterDao.saveCharacters()
+            .let {
+                characterDao.saveCharacters(*it)
+            }
     }
 }

@@ -12,10 +12,10 @@ data class CharacterCached(
     val code: List<String>,
     val gender: String,
     val image: String,
-    @Embedded
-    val location: CharactersLocationCached,
+    @Embedded(prefix = "characterLocationCached")
+    val location: CharacterLocationCached,
     val name: String,
-    @Embedded
+    @Embedded(prefix = "originCached")
     val origin: OriginCached,
     val species: String,
     val status: String,
@@ -28,7 +28,7 @@ data class CharacterCached(
         character.code,
         character.gender,
         character.image,
-        CharactersLocationCached(character.location),
+        CharacterLocationCached(character.location),
         character.name,
         OriginCached(character.origin),
         character.species,

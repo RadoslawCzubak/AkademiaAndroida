@@ -10,7 +10,7 @@ data class CharacterRemote(
     @SerializedName("gender") val gender: String,
     @SerializedName("id") val id: Int,
     @SerializedName("image") val image: String,
-    @SerializedName("location") val location: CharactersLocationRemote,
+    @SerializedName("location") val location: CharacterLocationRemote,
     @SerializedName("name") val name: String,
     @SerializedName("origin") val origin: OriginRemote,
     @SerializedName("species") val species: String,
