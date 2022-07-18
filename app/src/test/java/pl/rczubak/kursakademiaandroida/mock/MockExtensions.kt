@@ -6,6 +6,7 @@ import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.Char
 import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.CharacterLocationCached
 import pl.rczubak.kursakademiaandroida.features.characters.data.local.model.OriginCached
 import pl.rczubak.kursakademiaandroida.features.episodes.data.local.model.EpisodeCached
+import pl.rczubak.kursakademiaandroida.features.episodes.domain.model.Episode
 import pl.rczubak.kursakademiaandroida.features.locations.data.local.model.LocationCached
 
 @TestOnly
@@ -136,4 +137,14 @@ fun LocationCached.Companion.mock() = LocationCached(
     residents = listOf("residents1", "residents2"),
     type = "type string",
     url = "url string"
+)
+
+@TestOnly
+fun Episode.Companion.mock() = Episode(
+    id = 1,
+    name = "episode name",
+    airDate = "episode air date",
+    code = "episode code",
+    characters = emptyList(),
+    url = "episode url"
 )

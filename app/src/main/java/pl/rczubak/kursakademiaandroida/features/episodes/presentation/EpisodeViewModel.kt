@@ -19,8 +19,10 @@ class EpisodeViewModel(
                 getEpisodes(it)
             }
     }
-    val episodes: LiveData<List<EpisodeDisplayable>> = _episodes.map { episodes ->
-        episodes.map { EpisodeDisplayable(it) }
+    val episodes: LiveData<List<EpisodeDisplayable>> by lazy {
+        _episodes.map { episodes ->
+            episodes.map { EpisodeDisplayable(it) }
+        }
     }
 
     private fun getEpisodes(episodeLiveData: MutableLiveData<List<Episode>>) {
@@ -29,12 +31,12 @@ class EpisodeViewModel(
             params = Unit,
             scope = viewModelScope
         ) { result ->
+            setIdleState()
             result.onSuccess { episodeLiveData.value = it }
 
             result.onFailure { throwable ->
                 handleFailure(throwable)
             }
         }
-        setIdleState()
     }
 }
